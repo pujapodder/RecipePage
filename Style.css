@@ -1,0 +1,83 @@
+html,body{
+    margin:0;
+    text-align: center;
+
+}
+.logo{
+    padding: 30px;
+    background: center;
+    background-repeat: no-repeat;
+    background-image: url("images//underline.jpg");
+    text-align: center;
+    line-height: 30px;
+
+}
+
+#slider{
+    width:60%;
+    height: 400px;
+    margin: 1%;
+    border-radius: 15px 15px;
+
+}
+.class{
+    background: black;
+}
+.recipe
+{
+    
+    display: flex;
+    margin: 1%;
+    background: black;
+    border-radius: 15px 15px;
+
+}
+
+.recipe img
+{
+    border-radius: 30px;
+    padding: 20px;
+    height: 800px;
+    width: 600px;
+    float: left;
+}
+.recipe ul{
+    border-radius: 30px;
+    background: black;
+    color: azure;
+    height: 615px;
+    width: 600px;
+    font-size: 20px;
+    display: center;
+    padding: 5%;
+}
+.list{
+    list-style: none;
+}
+.Tuna{
+    border-radius: 30px;
+    padding: 20px;
+    height: 800px;
+    width: 600px;
+    float: right;
+}
+.author{
+    text-align: center;
+    text-decoration: underline;
+}
+.persons{
+    display: flex;
+    margin-left: 30%;
+
+}
+.persons img
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right:500px;
+    text-align: center;
+}
+.persons figcaption{
+    margin-left: 6%;
+}
