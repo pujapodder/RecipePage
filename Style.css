@@ -1,125 +1,193 @@
-html,body{
-    margin:0;
-    text-align: center;
+html,
+body {
+  margin: 0;
+  text-align: center;
+  background: center;
+  background-repeat: no-repeat;
+  background-image: url("images//backgroud.jpg");
+  background-size: cover;
+}
+.logoimage {
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+.logo {
+  padding: 30px;
+  background: center;
+  background: radial-gradient(transparent 90%, grey 70%);
+  text-align: left;
+  line-height: 20px;
+  border-radius: 20%;
+}
+.colorchange {
+  animation: colorchangeRoshona 1s infinite;
+}
+@keyframes colorchangeRoshona {
+  0% {
+    color: black;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: indigo;
+  }
+}
+.mainNav {
+  float: right;
+  margin-top: -60px;
+  margin-right: 30px;
+}
+.mainNav li {
+  display: inline;
+  overflow: hidden;
+  list-style: none;
+  margin-left: 40px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 100;
+}
+.mainNav li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+.mainNav li a:hover {
+  border-bottom: 2px solid black;
+}
+.recipeOptions {
+  display: inline;
+  text-align: center;
+}
+.recipeOptions a {
+  position: absolute;
+  margin-left: -270px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 70px;
+}
+.recipeOptions img {
+  margin-top: 40px;
+  border-radius: 50%;
+}
+.recipeOptions button {
+  border-radius: 50%;
+  background: none;
+  height: 300px;
+  width: 300px;
+  border: 0ch white;
+  margin: 35px;
+}
+.recipeOptions img:hover {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 60px;
+  border: 5px solid black;
 
-}
-.logo{
-    padding: 30px;
-    background: center;
-    background-repeat: no-repeat;
-    background-image: url("images//underline.jpg");
-    text-align: center;
-    line-height: 30px;
-
+  transition: all 0.3s linear;
+  padding: 20px;
+  overflow: hidden;
 }
 
-.recipeOptions{
-    display: inline;
-    text-align: center;
-
+#slider {
+  width: 60%;
+  height: 400px;
+  margin: 1%;
+  border-radius: 15px 15px;
+  box-shadow: 0 0 8px 8px grey;
 }
-.recipeOptions a{
-    position: absolute;
-   margin-left:-270px;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 70px;
+.class {
+  background: black;
 }
-.recipeOptions img{
-    margin-top:40px;
-    border-radius:50%;
-  
-
-}
-.recipeOptions button{
-    border-radius:50%;
-    background: none;
-    height: 300px;
-    width: 300px;
-    border: 0ch white;
-    margin: 35px;
-    
-}
-.recipeOptions img:hover{
-    border-radius:50%;
-    margin-left: auto;
-    margin-right: 60px; 
-    border: 10px solid black;
-    transition: all 0.3s linear;
-    padding: 20px;
-    overflow: hidden; 
+.recipe {
+  display: flex;
+  margin: 1%;
+  background: black;
+  border-radius: 15px 15px;
 }
 
-#slider{
-    width:60%;
-    height: 400px;
-    margin: 1%;
-    border-radius: 15px 15px;
-    border: 10px solid black;
+.recipe img {
+  border-radius: 30px;
+  padding: 20px;
+  height: 800px;
+  width: 600px;
+  float: left;
 }
-.class{
-    background: black;
+.recipe ul {
+  background: black;
+  color: azure;
+  height: 615px;
+  width: 600px;
+  font-size: 20px;
+  display: center;
+  padding: 5%;
 }
-.recipe
-{
-    
-    display: flex;
-    margin: 1%;
-    background: black;
-    border-radius: 15px 15px;
-
+.RecipeName {
+  margin-top: -50px;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: 400;
+  list-style: none;
+  margin-bottom: 70px;
 }
-
-.recipe img
-{
-    border-radius: 30px;
-    padding: 20px;
-    height: 800px;
-    width: 600px;
-    float: left;
+.list {
+  list-style: none;
 }
-.recipe ul{
-    border-radius: 30px;
-    background: black;
-    color: azure;
-    height: 615px;
-    width: 600px;
-    font-size: 20px;
-    display: center;
-    padding: 5%;
+.Tuna {
+  border-radius: 30px;
+  padding: 20px;
+  height: 800px;
+  width: 600px;
+  float: right;
 }
-.list{
-    list-style: none;
+.author {
+  text-align: center;
+  text-decoration: underline;
 }
-.Tuna{
-    border-radius: 30px;
-    padding: 20px;
-    height: 800px;
-    width: 600px;
+.persons {
+  display: flex;
+  margin-left: 30%;
+}
+.persons img {
+  height: 150px;
+  width: 150px;
+  margin-left: -50px;
+  border-radius: 50%;
+  margin-right: 500px;
+  text-align: center;
+}
+.persons figcaption {
+  display: inline;
+  margin-left: -540px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.mobileIcon {
+  display: none;
+}
+@media only screen and (max-width: 914px) {
+  .mainNav {
+    display: none;
+  }
+  .mobileIcon {
+    display: inline-block;
+    color: black;
     float: right;
-}
-.author{
-    text-align: center;
-    text-decoration: underline;
-}
-.persons{
-    display: flex;
-    margin-left: 30%;
-
-}
-.persons img
-{
-    height: 150px;
-    width: 150px;
-    margin-left: -50px;
-    border-radius: 50%;
-    margin-right:500px;
-    text-align: center;
-}
-.persons figcaption{
-    display: inline;
-    margin-left: -540px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
+    margin-top: -60px;
+    margin-right: 30px;
+  }
+  .mainNav {
+    float: left;
+  }
+  .mainNav li {
+    display: block;
+    margin-top: 10px;
+    margin-right: 30px;
+  }
 }
