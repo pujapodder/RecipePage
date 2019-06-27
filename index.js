@@ -25,7 +25,7 @@ function RecipeButtonFunction_ChickenTikka() {
 
 function RecipeButtonFunction() {
   alert("Recipe of");
-  document.getElementById("recipe").style.display = "visible";
+  document.getElementById("recipe").style.display = "none";
 }
 
 window.onload = function() {
